@@ -1,0 +1,13 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Sections
+@inject IJSRuntime js
+@attribute [RenderModeInteractiveServer]
+@inject CartService cartService
+<PageTitle>Home</PageTitle>
+
+<SectionContent SectionName="cart-quantity">
+    <span class="text-danger fw-bold">My Cart [ @cartService.CartCount]</span>
+</SectionContent>
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
